@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/gg7kmtT/download.jpg",
+    "title": "Workshop on [Workshop Title 1]",
+    "short_description": "[Brief description of Workshop 1]",
+    "price": 50.0,
+    "number_of_seats": 100,
+    "button": "registration_link_1"
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/gg7kmtT/download.jpg",
+    "title": "Webinar - [Webinar Title 2]",
+    "short_description": "[Brief description of Webinar 2]",
+    "price": 20.0,
+    "number_of_seats": 500,
+    "button": "registration_link_2"
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/W03cvtH/download-2.jpg",
+    "title": "Career Fair - [Career Fair Title 3]",
+    "short_description": "[Brief description of Career Fair 3]",
+    "price": 0.0,
+    "button": "more_info_link_3"
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/f94b026/images.png",
+    "title": "Educational Conference",
+    "short_description": "[Brief description of Conference 4]",
+    "price": 75.0,
+    "number_of_seats": 300,
+    "button": "registration_link_4"
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/zr2Xr6G/download-3.jpg",
+    "title": "Training Program - [Program Title 5]",
+    "short_description": "[Brief description of Training Program 5]",
+    "price": 120.0,
+    "number_of_seats": 50,
+    "button": "registration_link_5"
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/gg7kmtT/download.jpg",
+    "title": "Workshop on [Workshop Title 6]",
+    "short_description": "[Brief description of Workshop 6]",
+    "price": 40.0,
+    "number_of_seats": 75,
+    "button": "registration_link_6"
+  }
+]

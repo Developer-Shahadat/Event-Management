@@ -15,6 +15,10 @@ module.exports = {
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
+      
     ],
+    "react/jsx-key":'off',
+    "react/prop-types":'off',
+    "extends": "eslint:recommended"
   },
 }

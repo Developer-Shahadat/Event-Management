@@ -23,7 +23,8 @@ const SignUp = () => {
         setSuccess("")
     //console.log(name,email,password);
     if(password.length < 6){
-        setSignup("Six equal or Six above")
+        // setSignup("Six equal or Six above")
+        swal("Six equal or Six above", "You clicked the button!", "warning");
         return;
     }
     // else if(!/[A-Z]/.test(password)){
@@ -36,12 +37,12 @@ const SignUp = () => {
       }
          createUserWithEmailAndPassword(auth,email,password)
          .then(result => {
-            console.log(result.user);
-            swal("Success",  "success");
+            
+          swal("Success", "You clicked the button!", "success");
          }) 
          .catch(error => {
-            alert('Error Message',error)
-            swal("Success",  "warning");
+            
+          swal("Wrong Password or Email", "You clicked the button!", "warning");
          })
 
     }

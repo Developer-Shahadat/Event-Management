@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
     const navLink = <>
-        <NavLink  to="/home" className={({ isActive, isPending }) =>
+        <NavLink  to="/" className={({ isActive, isPending }) =>
                                         isPending ? 'pending' : isActive ? 'text-[#FF444A] underline' : ''}><li><a href="">Home</a></li></NavLink>
         <NavLink  to="/service" className={({ isActive, isPending }) =>
                                         isPending ? 'pending' : isActive ? 'text-[#FF444A] underline' : ''}><li><a href="">Service</a></li></NavLink>

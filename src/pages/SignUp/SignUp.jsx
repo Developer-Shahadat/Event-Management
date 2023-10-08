@@ -3,6 +3,7 @@ import auth from "../../firebase/firebase.config";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
+import swal from 'sweetalert';
 
 const SignUp = () => {
     const [signup,setSignup] = useState('')
@@ -33,11 +34,11 @@ const SignUp = () => {
          createUserWithEmailAndPassword(auth,email,password)
          .then(result => {
             console.log(result.user);
-           setSuccess('SuccessFul')
+            swal("Success",  "success");
          }) 
          .catch(error => {
             alert('Error Message',error)
-            setSignup(error.message)
+            swal("Success",  "warning");
          })
 
     }
@@ -109,7 +110,7 @@ const SignUp = () => {
                 }
             </div>
             <div>
-                <p className="m-2">Already have an account? <Link to="/login"><a >Log In</a></Link></p>
+                <p className="m-2">Already have an account? <Link to="/login"><a className="text-blue-600">Log In</a></Link></p>
              </div>
           </div>
         </div>

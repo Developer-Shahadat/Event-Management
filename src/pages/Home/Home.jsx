@@ -1,9 +1,12 @@
 import { useLoaderData } from "react-router-dom";
 import Cards from "./Cards";
 import Footer from "../Footer/Footer";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Home = () => {
+    AOS.init({ duration : 2000});
     const dataLoad = useLoaderData()
     return (
         <>
@@ -22,7 +25,7 @@ const Home = () => {
         <div className="mt-10 ">
             <h2 className="text-3xl text-center">Our Service</h2>
         </div>
-           <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 ">
+           <div  data-aos="fade-right" className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 ">
             {
                 dataLoad.map(card => <Cards  card={card}></Cards>)
             }

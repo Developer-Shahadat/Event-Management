@@ -4,8 +4,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 import swal from 'sweetalert';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const SignUp = () => {
+    AOS.init({ duration : 2000});
     const [signup,setSignup] = useState('')
     const [success,setSuccess] = useState()
     const [password,setPassword] = useState(false)
@@ -23,10 +26,10 @@ const SignUp = () => {
         setSignup("Six equal or Six above")
         return;
     }
-    else if(!/[A-Z]/.test(password)){
-        setSignup('To UpperCase')
-        return
-    }
+    // else if(!/[A-Z]/.test(password)){
+    //     setSignup('To UpperCase')
+    //     return
+    // }
     else if (!checkBox) {
         setSignup('please accepted the terms and Condtion');
         return;
@@ -46,7 +49,7 @@ const SignUp = () => {
     <div>
       <div className="hero min-h-screen bg-base-200">
         
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div data-aos="fade-right" className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form onSubmit={handleClickSignUp} className="card-body">
             <div className="form-control">
                 <label className="label">

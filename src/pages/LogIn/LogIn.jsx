@@ -4,7 +4,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 import swal from 'sweetalert';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const LogIn = () => {
+  AOS.init({ duration : 2000});
   const [error, setError] = useState("");
   const [success, setSuccess] = useState();
   const [password,setPassword] = useState(false)
@@ -27,7 +31,7 @@ const LogIn = () => {
       });
   };
   return (
-    <div className="card mx-auto mt-10 flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+    <div data-aos="fade-right" className="card mx-auto mt-10 flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <form onSubmit={handleLogIn} className="card-body">
         <div className="form-control">
           <label className="label">

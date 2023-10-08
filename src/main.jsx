@@ -10,10 +10,12 @@ import Root from './root/Root';
 import Home from './pages/Home/Home';
 import SignUp from './pages/SignUp/SignUp';
 import LogIn from './pages/LogIn/LogIn';
+import Error from './pages/Error/Error';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement : <Error></Error>,
     children:[
       {
       path: "/home",

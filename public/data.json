@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "img": "https://i.ibb.co/gg7kmtT/download.jpg",
+    "img": "https://i.ibb.co/F5hvsLH/image.png",
     "title": "Webinar - [Webinar Title 2]",
     "short_description": "[Brief description of Webinar 2]",
     "price": 20.0,
@@ -45,7 +45,7 @@
   },
   {
     "id": 6,
-    "img": "https://i.ibb.co/gg7kmtT/download.jpg",
+    "img": "https://i.ibb.co/4fXdg26/image.png",
     "title": "Workshop on [Workshop Title 6]",
     "short_description": "[Brief description of Workshop 6]",
     "price": 40.0,
